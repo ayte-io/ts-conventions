@@ -1,0 +1,21 @@
+version: '2.1'
+jobs:
+  publish:
+    docker:
+      - image: circleci/node:15
+    working_directory: /tmp/workspace
+    steps:
+      - checkout
+      - run: yarn publish
+workflows:
+  version: 2
+  default:
+    jobs:
+      - publish:
+          context: npmjs.org
+          filters:
+            tags:
+              only: /^\d+\.\d+\.\d+$/
+            branches:
+              ignore: /.*/
+

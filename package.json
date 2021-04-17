@@ -1,0 +1,10 @@
+{
+  "name": "@ayte/conventions",
+  "version": "1.0.0",
+  "description": "TypeScript configs and other default conventional stuff",
+  "main": "build/distribution/index.js",
+  "repository": "git@github.com:ayte-io/ts-conventions.git",
+  "author": "Ayte Labs <bingo@ayte.io>",
+  "license": "(MIT OR UPL-1.0)",
+  "private": false
+}

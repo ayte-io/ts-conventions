@@ -1,0 +1,1 @@
+// added just so any automated tool will enable to process package.json
